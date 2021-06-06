@@ -7,8 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jest tests/tests.ts",
-    "lint": "eslint tests --ext .js,.ts --resolve-plugins-relative-to .",
+    "test": "jest tests",
+    "lint": "eslint tests --ext .js,.ts",
     "doc": "typedoc"
   },
   "repository": {
@@ -23,7 +23,9 @@
   "homepage": "https://github.com/clementgerard1/oliver-core#readme",
   "dependencies": {
     "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
     "@babel/preset-typescript": "^7.13.0",
+    "@jest/types": "^27.0.2",
     "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
@@ -34,6 +36,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "jest": "^27.0.4",
+    "ts-node": "^10.0.0",
     "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
   }

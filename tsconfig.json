@@ -1,4 +1,15 @@
 {
+  "paths": {
+    "@src/*": [
+      "src/*"
+    ],
+    "@modules/*": [
+      "src/modules/*"
+    ],
+    "@utils/*": [
+      "src/utils/*"
+    ],
+  },
   "typedocOptions": {
     "entryPoints": ["tests", "src"],
     "exclude": ["**/tests.ts"],
