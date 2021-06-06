@@ -1,0 +1,33 @@
+{
+  "name": "oliver-core",
+  "version": "0.0.1",
+  "description": "",
+  "main": " ",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests/tests.ts",
+    "lint": "eslint tests --ext .js,.ts,.vue",
+    "doc": "typedoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clementgerard1/oliver-core.git"
+  },
+  "author": "Clément Gérard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clementgerard1/oliver-core/issues"
+  },
+  "homepage": "https://github.com/clementgerard1/oliver-core#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.2",
+    "eslint": "^7.28.0",
+    "jest": "^27.0.4",
+    "typedoc": "^0.20.36"
+  }
+}

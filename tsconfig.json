@@ -1,0 +1,7 @@
+{
+  "typedocOptions": {
+    "entryPoints": ["tests", "src"],
+    "exclude": ["**/tests.ts"],
+    "out": "doc"
+  }
+}
