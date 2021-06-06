@@ -1,4 +1,6 @@
 name: Lint and testing
+on:
+  push:
 
 jobs:
   deploy:
