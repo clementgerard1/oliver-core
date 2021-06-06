@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest tests/tests.ts",
-    "lint": "eslint tests --ext .js,.ts",
+    "lint": "eslint tests --ext .js,.ts --resolve-plugins-relative-to .",
     "doc": "typedoc"
   },
   "repository": {
