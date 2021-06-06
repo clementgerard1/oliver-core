@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  deploy:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,14 +21,21 @@ jobs:
 
       - name: Lint
         run: npm run lint
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Install
+        run: npm install
 
       - name: Unit test
         run: npm run test
-
-      # - name: Integration test
-      #   run: npm run test:e2e:headless
-      #   env:
-      #     # See https://docs.cypress.io/guides/guides/environment-variables.html
-      #     CYPRESS_TIMESIDE_BASE_URL: ${{ secrets.TIMESIDE_BASE_URL_E2E_TEST }}
-      #     CYPRESS_TIMESIDE_USER: ${{ secrets.TIMESIDE_USER_E2E_TEST }}
-      #     CYPRESS_TIMESIDE_PASS: ${{ secrets.TIMESIDE_PASS_E2E_TEST }}
