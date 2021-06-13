@@ -1,10 +1,17 @@
-import { AudioToAudioObject } from "@utils/interfaces/OliverObjects"
+import { OliverNode } from "@utils/interfaces/OliverObjects"
 
-export default class Plus_ extends AudioToAudioObject {
+// Documentation à afficher
+
+export default class Plus_ extends OliverNode {
+  // Need to be defined
   processor = 'plus_-processor'
   input = 'audio'
   output = 'audio'
 
+  // All other properties are available in process function
+  sum = 0
+
+  // Typescript
   process (inputs, outputs, parameters) {
     const output = outputs[0]
     output.forEach(channel => {

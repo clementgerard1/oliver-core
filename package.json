@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest tests",
     "lint": "eslint tests --ext .js,.ts",
-    "doc": "typedoc"
+    "doc": "typedoc",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "jest": "^27.0.4",
     "ts-node": "^10.0.0",
     "typedoc": "^0.20.36",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "vite": "^2.3.6"
   }
 }
